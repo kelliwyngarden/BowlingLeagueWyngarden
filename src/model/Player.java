@@ -42,6 +42,16 @@ public class Player {
 		this.screenName = screenName;
 		this.team = team;
 	}
+	
+	public Player(String firstName, String lastName, String phoneNumber, String screenName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phoneNumber = phoneNumber;
+		this.screenName = screenName;
+	}
+
+	
 
 	public String getFirstName() {
 		return firstName;
@@ -93,10 +103,5 @@ public class Player {
 				+ phoneNumber + ", screenName=" + screenName + ", teamId=" + team + "]";
 	}
 	
-	
-	
-	
-	
-
 }
  
