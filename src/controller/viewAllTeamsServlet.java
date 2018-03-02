@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class viewAllTeamsServlets
  */
-@WebServlet("/viewAllTeamsServlets")
-public class viewAllTeamsServlets extends HttpServlet {
+@WebServlet("/viewAllTeamsServlet")
+public class viewAllTeamsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public viewAllTeamsServlets() {
+    public viewAllTeamsServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,7 +32,7 @@ public class viewAllTeamsServlets extends HttpServlet {
 		if(dao.showAllTeams().isEmpty()) {
 			request.setAttribute("allTeams", " ");
 		}
-		getServletContext().getRequestDispatcher("/teams-list.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/viewAllTeams.jsp").forward(request, response);
 	}
 	
 
