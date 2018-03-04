@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.Team;
 
 /**
- * Servlet implementation class addMemberServlet
+ * Servlet implementation class addTeamServlet
  */
 @WebServlet("/addTeamServlet")
 public class addTeamServlet extends HttpServlet {

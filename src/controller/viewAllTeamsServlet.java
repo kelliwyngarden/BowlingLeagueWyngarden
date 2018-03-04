@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class viewAllTeamsServlets
+ * Servlet implementation class viewAllTeamsServlet
  */
 @WebServlet("/viewAllTeamsServlet")
 public class viewAllTeamsServlet extends HttpServlet {

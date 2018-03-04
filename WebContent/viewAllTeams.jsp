@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>View All Teams</title>
 </head>
 <body>
-<form method = "post" action = "viewAllTeamsServlet">
+<form method = "post" action = "editTeamsServlet">
 <table>
 <c:forEach items ="${requestScope.allTeams}" var="currentteam">
 <tr>

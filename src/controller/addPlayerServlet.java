@@ -36,7 +36,7 @@ public class addPlayerServlet extends HttpServlet {
 		String phoneNumber = request.getParameter("phoneNumber");
 		String screenName = request.getParameter("screenName");
 		String team = request.getParameter("team");	
-		Team t = th.SearchForTeamByName (team);
+		Team t = th.searchForTeamByName(team);
 
 		Player p = new Player(firstName, lastName, phoneNumber, screenName, t);
 		dao.addPlayer(p);

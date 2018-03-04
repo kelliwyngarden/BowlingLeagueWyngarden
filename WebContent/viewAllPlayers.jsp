@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>View All Players</title>
 </head>
 <body>
-<form method = "post" action = "viewAllPlayerServlet">
+<form method = "post" action = "editPlayersServlet">
 <table>
-<c:forEach items ="${requestScope.showAllPlayers}" var="currentplayer">
+<c:forEach items ="${requestScope.allPlayers}" var="currentplayer">
 <tr>
 	<td><input type="radio" name="id" value="${currentplayer.playerId}"></td>
 	<td>${currentplayer.firstName}</td>
